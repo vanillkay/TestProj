@@ -1,0 +1,9 @@
+export const FILTERS = {
+  COMPLETED: 'COMPLETED',
+  NOT_COMPLETED: 'NOT_COMPLETED',
+};
+
+export const FILTERS_VALUES = {
+  [FILTERS.COMPLETED]: true,
+  [FILTERS.NOT_COMPLETED]: false,
+};
