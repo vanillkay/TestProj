@@ -44,7 +44,11 @@ export const AddTodo = () => {
       <SafeAreaView style={{flex: COMMON_VALUES.FLEX_ONE}}>
         <View style={styles.content}>
           <Pressable style={styles.goBack} onPress={goBack}>
-            <MaterialIcons name="arrow-back-ios" size={COMMON_VALUES.SIZE_32} />
+            <MaterialIcons
+              name="arrow-back-ios"
+              size={COMMON_VALUES.SIZE_32}
+              color={EStyleSheet.value('$primaryColor')}
+            />
           </Pressable>
 
           <AText size={COMMON_VALUES.FONT_SIZE_40} bold>
