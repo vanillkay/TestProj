@@ -9,9 +9,9 @@ import {
   AText,
   AButton,
   TodoItem,
+  EmptyTodos,
   AnimatedList,
   TodosFilters,
-  EmptyTodos,
 } from '@components';
 import {Todo} from '@types';
 import {sortTodos} from '@helpers';
@@ -104,8 +104,9 @@ export const Home = () => {
 
 const styles = EStyleSheet.create({
   container: {
+    flex: COMMON_VALUES.FLEX_ONE,
     backgroundColor: '$primaryBg',
-    flex: 1,
+    paddingTop: COMMON_VALUES.SIZE_18,
   },
 
   filter: {
@@ -129,7 +130,7 @@ const styles = EStyleSheet.create({
   },
 
   listStyle: {
-    flex: 1,
+    flex: COMMON_VALUES.FLEX_ONE,
     marginTop: COMMON_VALUES.SIZE_8,
   },
 

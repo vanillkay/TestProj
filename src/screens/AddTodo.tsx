@@ -29,7 +29,7 @@ export const AddTodo = () => {
   const onAddTodo = useCallback(() => {
     ReactNativeHapticFeedback.trigger('notificationSuccess');
     setTodoText('');
-    dispatch(addTodo(todoText));
+    dispatch(addTodo(todoText.trim()));
 
     Toast.show({
       type: 'success',
@@ -54,7 +54,6 @@ export const AddTodo = () => {
           <View style={styles.input}>
             <AInput
               multiline
-              blurOnSubmit
               value={todoText}
               placeholder="..."
               contextMenuHidden
@@ -84,7 +83,7 @@ export const AddTodo = () => {
           <AButton
             title="Add Todo"
             onPress={onAddTodo}
-            disabled={!todoText.length}
+            disabled={!todoText.trim().length}
           />
         </View>
       </SafeAreaView>
