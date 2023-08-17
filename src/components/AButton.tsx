@@ -1,5 +1,5 @@
 import {FC} from 'react';
-import {Button, ButtonProps, Pressable, View} from 'react-native';
+import {Pressable} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
 import {COMMON_VALUES} from '@constants';
